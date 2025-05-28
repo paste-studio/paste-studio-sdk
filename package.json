@@ -1,5 +1,6 @@
 {
-  "dependencies": {
+	"dependencies": {
     "npm:@hey-api/client-fetch": "^0.10.2"
-  }
+	},
+	"version": "0.3.0"
 }
