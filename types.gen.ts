@@ -8,8 +8,25 @@ export type GetLatergramData = {
 };
 
 export type GetLatergramResponses = {
-    200: unknown;
+    200: string;
 };
+
+export type GetLatergramResponse = GetLatergramResponses[keyof GetLatergramResponses];
+
+export type GetLatergramByIdData = {
+    body?: never;
+    path: {
+        id: string;
+    };
+    query?: never;
+    url: '/latergram/{id}';
+};
+
+export type GetLatergramByIdResponses = {
+    200: string;
+};
+
+export type GetLatergramByIdResponse = GetLatergramByIdResponses[keyof GetLatergramByIdResponses];
 
 export type GetHealthData = {
     body?: never;
